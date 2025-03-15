@@ -44,13 +44,16 @@ import makeWASocket, { DisconnectReason } from "@whiskeysockets/baileys";
 import { Boom } from "@hapi/boom";
 
 async function connectToWhatsApp() {
+  const { state, saveCreds } = await useMultiFileAuthState("auth_baileys");
+
   const sock = makeWASocket({
     // can provide additional config here
+    auth: state,
     printQRInTerminal: true,
   });
   sock.ev.on("connection.update", (update) => {
     const { connection, lastDisconnect } = update;
-    if (connection === "close") {
+    if (connection === "close" && lastDisconnect) {
       const shouldReconnect =
         (lastDisconnect.error as Boom)?.output?.statusCode !==
         DisconnectReason.loggedOut;
@@ -76,6 +79,8 @@ async function connectToWhatsApp() {
       text: "Hello there!",
     });
   });
+
+  sock.ev.on("creds.update", saveCreds);
 }
 // run in main file
 connectToWhatsApp();
