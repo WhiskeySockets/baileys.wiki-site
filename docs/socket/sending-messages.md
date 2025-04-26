@@ -80,7 +80,18 @@ await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'Hello World',
 ```
 > How to apply a [contextInfo](https://baileys.wiki/docs/api/namespaces/proto/namespaces/ContextInfo/) 
 
-- `linkPreview` TO DO
+```javascript
+await sock.sendMessage('1234@whatsapp.net', {
+  text: 'Hello, this is baileys link\n\nhttps://github.com/WhiskeySockets/Baileys',
+  linkPreview: {
+    'canonical-url': 'https://github.com/WhiskeySockets/Baileys',
+    'matched-text': 'https://github.com/WhiskeySockets/Baileys',
+    title: 'Lightweight full-featured typescript/javascript WhatsApp Web API',
+    description:
+      'Lightweight full-featured typescript/javascript WhatsApp Web API - WhiskeySockets/Baileys',
+  },
+});
+```
 
 ## Forwarding Messages
 
