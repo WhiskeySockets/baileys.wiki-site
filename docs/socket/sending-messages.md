@@ -6,16 +6,15 @@ sidebar_position: 6
 
 ## Text Messages
 
-To send a plain text message, use:
+### Simple Text
 
 ```javascript
 await sock.sendMessage('1234567890@s.whatsapp.net', {
   text: 'Hello from Baileys!'
 })
 ```
----
 
-### With Mentions
+### Text with Mentions
 
 ```javascript
 await sock.sendMessage('1234567890@s.whatsapp.net', {
@@ -23,16 +22,13 @@ await sock.sendMessage('1234567890@s.whatsapp.net', {
   mentions: ['1234567890@s.whatsapp.net']
 })
 ```
-> To mention someone, include their Jid in the `mentions` array — this highlights them in the chat. Also note that you on the text you remove the `@s.whatsapp.net` from the string.
+> To mention someone, add their JID to the `mentions` array.  
+> In the text string, **omit** `@s.whatsapp.net` — just use `@1234567890`.
 
----
-
-### Quoting Another Message
+### Quoting a Message
 
 ```javascript
-const msg = await sock.sendMessage('1234567890@s.whatsapp.net', {
-  text: 'Hello'
-})
+const msg = await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'Hello' })
 
 await sock.sendMessage('1234567890@s.whatsapp.net', {
   text: 'Hi',
@@ -40,11 +36,13 @@ await sock.sendMessage('1234567890@s.whatsapp.net', {
   quoted: msg
 })
 ```
-> Quoting a message allows you to reply directly to any and kind of message, by passing the message object.
+> Quoting lets you reply directly to an existing message by passing its message object.
+
+---
 
 ## Media Messages
 
-### Send Image via Buffer
+### Send Image from Buffer
 
 ```javascript
 import fs from 'node:fs'
@@ -56,11 +54,9 @@ await sock.sendMessage('1234567890@s.whatsapp.net', {
   caption: 'Here is an image'
 })
 ```
-> Sending media from a local file requires reading it into a buffer and passing it as the `image` field.
+> For local files, read them into a buffer and assign it to the `image` field.
 
----
-
-### Send Video via URL
+### Send Video from URL
 
 ```javascript
 await sock.sendMessage('1234567890@s.whatsapp.net', {
@@ -68,45 +64,54 @@ await sock.sendMessage('1234567890@s.whatsapp.net', {
   caption: 'Check this out!'
 })
 ```
-> Media can also be sent via URLs; Baileys will automatically download and upload the file.
+> Baileys automatically downloads and uploads media when given a URL.
 
 ---
 
-## contextInfo, linkPreview
+## Special Message Options
+
+### `contextInfo`
 
 ```javascript
-await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'Hello World', 
-  contextInfo: {}})
+await sock.sendMessage('1234567890@s.whatsapp.net', {
+  text: 'Hello World',
+  contextInfo: {}
+})
 ```
-> How to apply a [contextInfo](https://baileys.wiki/docs/api/namespaces/proto/namespaces/ContextInfo/) 
+> `contextInfo` allows attaching metadata to a message.  
+> See the [ContextInfo docs](https://baileys.wiki/docs/api/namespaces/proto/namespaces/ContextInfo/) for more details.
+
+### Link Preview
 
 ```javascript
-await sock.sendMessage('1234@whatsapp.net', {
-  text: 'Hello, this is baileys link\n\nhttps://github.com/WhiskeySockets/Baileys',
+await sock.sendMessage('1234567890@s.whatsapp.net', {
+  text: 'Hello, this is the Baileys link\n\nhttps://github.com/WhiskeySockets/Baileys',
   linkPreview: {
     'canonical-url': 'https://github.com/WhiskeySockets/Baileys',
     'matched-text': 'https://github.com/WhiskeySockets/Baileys',
     title: 'Lightweight full-featured typescript/javascript WhatsApp Web API',
-    description:
-      'Lightweight full-featured typescript/javascript WhatsApp Web API - WhiskeySockets/Baileys',
+    description: 'Lightweight full-featured typescript/javascript WhatsApp Web API - WhiskeySockets/Baileys',
   },
 });
 ```
+> Link previews enhance links with a title, description, and optional thumbnail.
 
-## Forwarding Messages
+---
+
+## Other Message Types
+
+### Forwarding Messages
 
 ```javascript
-const msg = await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'an old message' })
+const msg = await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'An old message' })
 
 await sock.sendMessage('1234567890@s.whatsapp.net', {
   forward: msg
 })
 ```
-> Forwarding a message resends an existing message without needing to reconstruct its contents manually.
+> Forwarding resends an existing message without reconstructing it.
 
----
-
-## Deleting Messages
+### Deleting Messages
 
 ```javascript
 const msg = await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'A Simple Message' })
@@ -115,24 +120,23 @@ const { key } = msg
 
 await sock.sendMessage('1234567890@s.whatsapp.net', { delete: key })
 ```
-> Deleting messages removes them for everyone or for the sender depending on the context.
+> Deleting removes a message for either everyone or just yourself, depending on the context.
 
----
-
-## Editing Messages
+### Editing Messages
 
 ```javascript
 const msg = await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'Hello User' })
 
 const { key } = msg
 
-await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'Welcome to Baileys', edit: key })
+await sock.sendMessage('1234567890@s.whatsapp.net', { 
+  text: 'Welcome to Baileys', 
+  edit: key 
+})
 ```
-> Editing allows modifying an already sent message without resending a new one.
+> Editing allows you to change an already sent message.
 
----
-
-## Reaction Messages
+### Reaction Messages
 
 ```javascript
 const msg = await sock.sendMessage('1234567890@s.whatsapp.net', { text: 'Hello User' })
@@ -141,24 +145,23 @@ const { key } = msg
 
 await sock.sendMessage('1234567890@s.whatsapp.net', {
   react: {
-    text: '👍', // leave empty to remove reaction from a message
+    text: '👍', // Leave empty to remove the reaction
     key: key
   }
 })
 ```
-> Reactions are lightweight responses (like emojis) tied to a specific message.
+> Reactions are lightweight emoji responses tied to a specific message.
 
 ---
 
-## Note about Disappearing Mode (`ephemeralExpiration`)
-
-When sending a message, you can set `ephemeralExpiration` to control disappearing messages:
+## Disappearing Messages (`ephemeralExpiration`)
 
 ```javascript
 await sock.sendMessage('1234567890@s.whatsapp.net', {
   text: 'This will disappear',
 }, {
-  ephemeralExpiration: 60 // seconds
+  ephemeralExpiration: 60 // in seconds
 })
 ```
-> Disappearing messages automatically delete after a set time.
+> Disappearing messages auto-delete after the specified time.
+```
