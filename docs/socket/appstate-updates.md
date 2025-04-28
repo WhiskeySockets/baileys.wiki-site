@@ -55,7 +55,7 @@ await sock.chatModify(
 
 ```javascript
 await sock.sendMessage(jid, {
-      pin: message.quoted.key,
+      pin: key,
       type: 1, // Change to 2 to unpin the message
       time: 604800, // 7 days in seconds
     });
