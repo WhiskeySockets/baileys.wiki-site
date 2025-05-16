@@ -21,6 +21,16 @@ Adding Baileys to your project is as simple as:
 ```bash npm2yarn
 npm install baileys
 ```
+Using jsr, which allows you to use it on Deno (and possibly other runtimes):
+```bash
+deno add jsr:@hviana/baileys
+```
+```bash
+bunx jsr add @hviana/baileys
+```
+```bash
+npx jsr add @hviana/baileys
+```
 :::info
 As of now, Baileys requires **Node 17+** to function. It is planned to abstract the project away from Node in a future releasae.
 :::
