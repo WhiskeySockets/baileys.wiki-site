@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/WhiskeySockets/baileys.wiki-site/tree/main/docs/',
+            'https://github.com/WhiskeySockets/baileys.wiki-site/tree/main/',
             remarkPlugins: [
               [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
             ],
