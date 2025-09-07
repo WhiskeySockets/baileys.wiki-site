@@ -7,7 +7,7 @@ Share the link: https://whiskey.so/migrate-latest
 ## LIDs
 
 :::warning
-This system requires the auth state to support the lid-mapping key. Make sure you have updated your authentication state. Also, PLEASE cache it using [`makeCacheableSignalKeyStore()`](../api/functions/makeCacheableSignalKeyStore), as done in the Example, as the cache can be accessed & updated rather quickly.
+This system requires the auth state to support the `lid-mapping` key. Make sure you have updated your authentication state. Also, PLEASE cache it using [`makeCacheableSignalKeyStore()`](../api/functions/makeCacheableSignalKeyStore), as done in the Example, as the cache can be accessed & updated rather quickly.
 :::
 
 WhatsApp finalized its LID (Local Identifier) update (which it started in 2023). This LID system assures the anonymity of users on large groups, allowing the WhatsApp client to show a simple (`+43.......21`) to hide the phone number. This is done to ensure the privacy of users.
@@ -30,17 +30,17 @@ For the sake of businesses and Meta Ads, WhatsApp has used the LIDs for 2 years 
 
 This is the Alternate JID for the user, thus, if participant is a LID, the Alt will be a PN.
 
-Also, in the GroupMetadata type, each ID type is now a LID and associated with it is a pn type (`owner` and `ownerPn`, `descOwner` and `descOwnerPn`, so on..)
+Also, in the [GroupMetadata](../api/interfaces/GroupMetadata) type, each ID type is now a LID and associated with it is a pn type (`owner` and `ownerPn`, `descOwner` and `descOwnerPn`, so on..)
 
-In the Contact type, there are no longer any `jid`/`lid` fields. Instead, there is an `id` field (the preferred one by WhatsApp), and there is a `phoneNumber` and `lid` field. One or the other is present depending on the `id` field. If the `id` is an LID, then the `phoneNumber` is present, and vice versa.
+In the [Contact](../api/interfaces/Contact) type, there are no longer any `jid`/`lid` fields. Instead, there is an `id` field (the preferred one by WhatsApp), and there is a `phoneNumber` and `lid` field. One or the other is present depending on the `id` field. If the `id` is an LID, then the `phoneNumber` is present, and vice versa.
 
-NOTE: The changes applied in the Contact type affect the `participants` property of groups as well.
+NOTE: The changes applied in the [Contact](../api/interfaces/Contact) type affect the [`participants`](../api/interfaces/GroupMetadata#participants) property of groups as well.
 
 There is also a new enum called `WAMessageAddressingMode`, this represents the preferred type of ID in a chat or group.
 
 In the events, there is now a `lid-mapping.update` event that returns a new LID/PN mapping if found (not reported always, this is a WIP).
 
-It also removes the "isJidUser" function and replaces it with "isPnUser". The reason is that both PNs and LIDs are JIDs, so this isn't logical at all.
+It also removes the "`isJidUser`" function and replaces it with "`isPnUser`". The reason is that both PNs and LIDs are JIDs, so this isn't logical at all.
 
 There is an internal store PNs and LIDs, and it can be accessed via:
 ```ts
