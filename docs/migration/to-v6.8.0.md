@@ -67,6 +67,7 @@ async function loadESMModule() {
 loadESMModule();
 ```
 
+With this change, the project has also moved to the new version of Yarn (Yarn v4.x) rather than Yarn Classic. This means that the project now requires corepack.
 
 ## Protobufs
 
