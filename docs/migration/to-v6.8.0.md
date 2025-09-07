@@ -25,9 +25,20 @@ WhatsApp allows us to get the LID from a PN using the protocol (`onWhatsApp()` /
 For the sake of businesses and Meta Ads, WhatsApp has used the LIDs for 2 years ([#408](https://github.com/WhiskeySockets/Baileys/pull/408)), and in those cases, you (business) can request the user to share the number (send a message with `{ requestPhoneNumber: true }`), OR you (the user), can share your number with a business (`{ sharePhoneNumber: true }`).
 
 6.8.0 Introduces the following fields to the MessageKey:
-- remoteJidAlt -> this is for DMs
-- participantAlt -> this is for Groups and other contexts (broadcast, channels?, so on)
+- `remoteJidAlt` -> this is for DMs
+- `participantAlt` -> this is for Groups and other contexts (broadcast, channels?, so on)
+
 This is the Alternate JID for the user, thus, if participant is a LID, the Alt will be a PN.
+
+Also, in the GroupMetadata type, each ID type is now a LID and associated with it is a pn type (`owner` and `ownerPn`, `descOwner` and `descOwnerPn`, so on..)
+
+In the Contact type, there are no longer any `jid`/`lid` fields. Instead, there is an `id` field (the preferred one by WhatsApp), and there is a `phoneNumber` and `lid` field. One or the other is present depending on the `id` field. If the `id` is an LID, then the `phoneNumber` is present, and vice versa.
+
+NOTE: The changes applied in the Contact type affect the `participants` property of groups as well.
+
+There is also a new enum called `WAMessageAddressingMode`, this represents the preferred type of ID in a chat or group.
+
+In the events, there is now a `lid-mapping.update` event that returns a new LID/PN mapping if found (not reported always, this is a WIP).
 
 It also removes the "isJidUser" function and replaces it with "isPnUser". The reason is that both PNs and LIDs are JIDs, so this isn't logical at all.
 
