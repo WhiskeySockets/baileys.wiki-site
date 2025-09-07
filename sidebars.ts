@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   docsSidebar: [
     'intro',
+    'migration/to-v6.8.0',
     {
       type: 'category',
       label: 'Socket',

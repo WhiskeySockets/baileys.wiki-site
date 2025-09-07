@@ -30,7 +30,7 @@ const privacySettings = await sock.fetchPrivacySettings(true);
 The return type isn't currently exposed, but that's a work in progress.
 
 ### Updating Privacy Settings
-Instead of one method to also update the privacy settings, Baileys exposes the following flurry of functions.
+Instead of one method to also update the privacy settings, Baileys exposes the following set of functions.
 Since they are mostly self-explanatory, I'll group them together instead.
 
 Here's a usage example:

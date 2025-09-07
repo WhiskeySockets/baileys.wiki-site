@@ -5,6 +5,7 @@ sidebar_position: 7
 WhatsApp group support is pivotal for many users of this library. To this end, Baileys has very extensive group support.
 
 ## Group creation / join
+To create a group, you can use the `socket.createGroup()` function.
 
 ## Participant modifications
 // Includes participant join requests

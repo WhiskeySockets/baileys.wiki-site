@@ -1,0 +1,76 @@
+# Migrate to v6.8.0
+
+Baileys 6.8.0 has multiple breaking changes that need to be addressed.
+
+Share the link: https://whiskey.so/migrate-latest
+
+## LIDs
+
+:::warning
+This system requires the auth state to support the lid-mapping key. Make sure you have updated your authentication state. Also, PLEASE cache it using [`makeCacheableSignalKeyStore()`](../api/functions/makeCacheableSignalKeyStore), as done in the Example, as the cache can be accessed & updated rather quickly.
+:::
+
+WhatsApp finalized its LID (Local Identifier) update (which it started in 2023). This LID system assures the anonymity of users on large groups, allowing the WhatsApp client to show a simple (`+43.......21`) to hide the phone number. This is done to ensure the privacy of users.
+
+WhatsApp is also adding a username system (`@username`) later on, so relying on a phone number to identify the user has become cumbersome and sometimes unreliable and impossible. Thus WhatsApp now assigns a LID to each user on its platform.
+
+This LID is unique to each user, like how a JID is. It is NOT unique per group like others have said. You can message anyone using either their LID or their PN.
+
+PN stands for phone number, and is the old JID format you are used to (`user@s.whatsapp.net`).
+
+By default now, all new Signal sessions are in the LID format. Old sessions will be migrated. On new device sync, the main (mobile) device will include a mapping of `PN<->LID`.
+
+WhatsApp allows us to get the LID from a PN using the protocol (`onWhatsApp()` / USyncProtocol), but not the opposite.
+
+For the sake of businesses and Meta Ads, WhatsApp has used the LIDs for 2 years ([#408](https://github.com/WhiskeySockets/Baileys/pull/408)), and in those cases, you (business) can request the user to share the number (send a message with `{ requestPhoneNumber: true }`), OR you (the user), can share your number with a business (`{ sharePhoneNumber: true }`).
+
+6.8.0 Introduces the following fields to the MessageKey:
+- remoteJidAlt -> this is for DMs
+- participantAlt -> this is for Groups and other contexts (broadcast, channels?, so on)
+This is the Alternate JID for the user, thus, if participant is a LID, the Alt will be a PN.
+
+It also removes the "isJidUser" function and replaces it with "isPnUser". The reason is that both PNs and LIDs are JIDs, so this isn't logical at all.
+
+
+
+## ESM
+
+Baileys 6.8.0 ditches CommonJS for the sake of ESM. We use multiple ESM packages, and have had to resort to extreme solutions to get them to work with CommmonJS. Not to mention that our linting system was outdated because we relied on CJS (Eslint was multiple major versions behind).
+
+This also limited our expansion into Web, Deno, Bun and other runtimes and limited us severely to Node. It also introduced quirks like `makeWASocket.default`.
+
+One of the only solutions are:
+
+1. Convert your project to ESM (recommended):
+This involves changing your type in `package.json` to `module` and replacing `require()` calls with `import` calls.
+If you have any remaining CommonJS modules that you still need to use from ESM, you can use [`createRequire()`](https://nodejs.org/api/module.html#modulecreaterequirefilename).
+
+
+2. Import Baileys from within CommonJS:
+This isn't recommended, but you can do this by using a `await import()` call.
+Example:
+```ts
+// cjs_module.js
+
+// Use require normally
+const fs = require('fs');
+
+async function loadESMModule() {
+  try {
+    const { default: makeWASocket } = await import('baileys'); // Dynamic import of an ESM module
+    const socket = makeWASocket(...)
+  } catch (error) {
+    console.error('Error loading ESM module:', error);
+  }
+}
+
+loadESMModule();
+```
+
+
+## Protobufs
+
+To drastically reduce the bundle size of Baileys, we have removed some methods in the `proto` package. The only ones that remain are: `.create()` (to be used in the place of `.fromObject()`), and `.encode()` / `.decode()`
+
+
+For the full patch notes of 6.8.0, check the GitHub release: https://github.com/WhiskeySockets/Baileys/releases/tag/v6.8.0.
