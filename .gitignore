@@ -21,3 +21,6 @@ yarn-error.log*
 
 temp_library
 docs/api/*
+
+.pnp*
+.yarn*
