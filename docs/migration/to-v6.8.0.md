@@ -42,7 +42,12 @@ In the events, there is now a `lid-mapping.update` event that returns a new LID/
 
 It also removes the "isJidUser" function and replaces it with "isPnUser". The reason is that both PNs and LIDs are JIDs, so this isn't logical at all.
 
-
+There is an internal store PNs and LIDs, and it can be accessed via:
+```ts
+const store = sock.signalRepository.getLIDMappingStore()
+// available methods:
+// storeLIDPNMapping, storeLIDPNMappings, getLIDForPN, getPNForLID
+```
 
 ## ESM
 
