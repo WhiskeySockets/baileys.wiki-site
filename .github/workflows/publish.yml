@@ -17,28 +17,34 @@ jobs:
     concurrency: publish
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 22.x
 
-      - name: Get npm cache directory
-        id: npm-cache
-        run: |
-          echo "::set-output name=dir::$(npm config get cache)"
+      - name: Enable Corepack
+        run: corepack enable
 
-      - name: Setup npm cache
-        uses: actions/cache@v3
+      - name: Set Yarn version
+        run: corepack prepare yarn@4.9.2 --activate
+
+      - name: Get Yarn cache directory
+        id: yarn-cache
+        run: |
+          echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+
+      - name: Setup Yarn cache
+        uses: actions/cache@v4
         with:
-          path: ${{ steps.npm-cache.outputs.dir }}
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-yarn-
 
       - name: Setup docusaurus cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ".docusaurus"
           key: ${{ runner.os }}-docusaurus-${{ hashFiles('**/docusaurus.config.js') }}
@@ -46,10 +52,12 @@ jobs:
             ${{ runner.os }}-docusaurus-
 
       - name: Setup node_modules cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
-          path: "node_modules/.cache"
-          key: ${{ runner.os }}-node_modules-cache-${{ hashFiles('**/package-lock.json') }}
+          path: |
+            node_modules/.cache
+            .yarn/cache
+          key: ${{ runner.os }}-node_modules-cache-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node_modules-cache-
 
@@ -64,13 +72,13 @@ jobs:
           rm -rf temp_library
 
       - name: Install Dependencies
-        run: npm ci || npm install
+        run: yarn install --immutable
 
       - name: Build Page
-        run: npm run build
+        run: yarn build
 
       - name: Deploy Page
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
