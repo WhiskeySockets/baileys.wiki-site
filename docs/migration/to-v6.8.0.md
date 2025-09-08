@@ -7,7 +7,7 @@ Share the link: https://whiskey.so/migrate-latest
 ## LIDs
 
 :::warning
-This system requires the auth state to support the `lid-mapping` key. Make sure you have updated your authentication state. Also, PLEASE cache it using [`makeCacheableSignalKeyStore()`](../api/functions/makeCacheableSignalKeyStore), as done in the Example, as the cache can be accessed & updated rather quickly.
+This system requires the auth state to support the `lid-mapping` key. Make sure you have updated your authentication state. Also, PLEASE cache it using [`makeCacheableSignalKeyStore()`](../api/functions/makeCacheableSignalKeyStore), as done in the [Example](https://github.com/WhiskeySockets/Baileys/blob/master/Example/example.ts), as the cache can be accessed & updated rather quickly.
 :::
 
 WhatsApp finalized its LID (Local Identifier) update (which it started in 2023). This LID system assures the anonymity of users on large groups, allowing the WhatsApp client to show a simple (`+43.......21`) to hide the phone number. This is done to ensure the privacy of users.
