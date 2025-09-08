@@ -1,6 +1,6 @@
-# Migrate to v6.8.0
+# Migrate to v7.x.x
 
-Baileys 6.8.0 has multiple breaking changes that need to be addressed.
+Baileys 7.0.0 has multiple breaking changes that need to be addressed.
 
 Share the link: https://whiskey.so/migrate-latest
 
@@ -90,4 +90,4 @@ With this change, the project has also moved to the new version of Yarn (Yarn v4
 To drastically reduce the bundle size of Baileys, we have removed some methods in the `proto` package. The only ones that remain are: `.create()` (to be used in the place of `.fromObject()`), and `.encode()` / `.decode()`
 
 
-For the full patch notes of 6.8.0, check the GitHub release: https://github.com/WhiskeySockets/Baileys/releases/tag/v6.8.0.
+For the full patch notes of 7.0.0, check the latest GitHub release: https://github.com/WhiskeySockets/Baileys/releases/
