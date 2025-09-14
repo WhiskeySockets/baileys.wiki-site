@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Variable: Curve | Baileys</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" name="twitter:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" property="og:url" content="https://baileys.wiki/docs/api/variables/Curve"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Variable: Curve | Baileys"><meta data-rh="true" name="description" content="const Curve: object"><meta data-rh="true" property="og:description" content="const Curve: object"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://baileys.wiki/docs/api/variables/Curve"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/variables/Curve" hreflang="en"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/variables/Curve" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.299ca415.css">
-<script src="/assets/js/runtime~main.73100db1.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.15869d66.js" defer="defer"></script>
 <script src="/assets/js/main.a3df4210.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -12,7 +12,7 @@
 <blockquote>
 <p><code>const</code> <strong>Curve</strong>: <code>object</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/88ec0c4db212f16357bb133503fbdd2368620cc4/src/Utils/crypto.ts#L14" target="_blank" rel="noopener noreferrer">src/Utils/crypto.ts:14</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/421ca2eb92b97297564ae3a0b822cccaa3c18ee1/src/Utils/crypto.ts#L13" target="_blank" rel="noopener noreferrer">src/Utils/crypto.ts:13</a></p>
 <h2 class="anchor anchorWithStickyNavbar_OLw8" id="type-declaration">Type declaration<a href="#type-declaration" class="hash-link" aria-label="Direct link to Type declaration" title="Direct link to Type declaration">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_OLw8" id="generatekeypair">generateKeyPair()<a href="#generatekeypair" class="hash-link" aria-label="Direct link to generateKeyPair()" title="Direct link to generateKeyPair()">​</a></h3>
 <blockquote>
@@ -22,7 +22,7 @@
 <p><a href="/docs/api/type-aliases/KeyPair"><code>KeyPair</code></a></p>
 <h3 class="anchor anchorWithStickyNavbar_OLw8" id="sharedkey">sharedKey()<a href="#sharedkey" class="hash-link" aria-label="Direct link to sharedKey()" title="Direct link to sharedKey()">​</a></h3>
 <blockquote>
-<p><strong>sharedKey</strong>: (<code>privateKey</code>, <code>publicKey</code>) =&gt; <code>Buffer</code>&lt;<code>any</code>&gt;</p>
+<p><strong>sharedKey</strong>: (<code>privateKey</code>, <code>publicKey</code>) =&gt; <code>Buffer</code>&lt;<code>ArrayBuffer</code>&gt;</p>
 </blockquote>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="privatekey">privateKey<a href="#privatekey" class="hash-link" aria-label="Direct link to privateKey" title="Direct link to privateKey">​</a></h5>
@@ -30,10 +30,10 @@
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="publickey">publicKey<a href="#publickey" class="hash-link" aria-label="Direct link to publicKey" title="Direct link to publicKey">​</a></h5>
 <p><code>Uint8Array</code></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="returns-1">Returns<a href="#returns-1" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>Buffer</code>&lt;<code>any</code>&gt;</p>
+<p><code>Buffer</code>&lt;<code>ArrayBuffer</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_OLw8" id="sign">sign()<a href="#sign" class="hash-link" aria-label="Direct link to sign()" title="Direct link to sign()">​</a></h3>
 <blockquote>
-<p><strong>sign</strong>: (<code>privateKey</code>, <code>buf</code>) =&gt; <code>any</code></p>
+<p><strong>sign</strong>: (<code>privateKey</code>, <code>buf</code>) =&gt; <code>Uint8Array</code>&lt;<code>ArrayBufferLike</code>&gt;</p>
 </blockquote>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="privatekey-1">privateKey<a href="#privatekey-1" class="hash-link" aria-label="Direct link to privateKey" title="Direct link to privateKey">​</a></h5>
@@ -41,7 +41,7 @@
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="buf">buf<a href="#buf" class="hash-link" aria-label="Direct link to buf" title="Direct link to buf">​</a></h5>
 <p><code>Uint8Array</code></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="returns-2">Returns<a href="#returns-2" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
-<p><code>any</code></p>
+<p><code>Uint8Array</code>&lt;<code>ArrayBufferLike</code>&gt;</p>
 <h3 class="anchor anchorWithStickyNavbar_OLw8" id="verify">verify()<a href="#verify" class="hash-link" aria-label="Direct link to verify()" title="Direct link to verify()">​</a></h3>
 <blockquote>
 <p><strong>verify</strong>: (<code>pubKey</code>, <code>message</code>, <code>signature</code>) =&gt; <code>boolean</code></p>
