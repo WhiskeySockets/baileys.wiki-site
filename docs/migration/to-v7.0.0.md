@@ -44,7 +44,7 @@ It also removes the "`isJidUser`" function and replaces it with "`isPnUser`". Th
 
 There is an internal store PNs and LIDs, and it can be accessed via:
 ```ts
-const store = sock.signalRepository.getLIDMappingStore()
+const store = sock.signalRepository.lidMapping
 // available methods:
 // storeLIDPNMapping, storeLIDPNMappings, getLIDForPN, getPNForLID
 ```
