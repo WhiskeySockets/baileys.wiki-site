@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">Class: Message | Baileys</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" name="twitter:image" content="https://baileys.wiki/img/social_card.jpg"><meta data-rh="true" property="og:url" content="https://baileys.wiki/docs/api/namespaces/proto/classes/Message"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Class: Message | Baileys"><meta data-rh="true" name="description" content="Defined in3871"><meta data-rh="true" property="og:description" content="Defined in3871"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://baileys.wiki/docs/api/namespaces/proto/classes/Message"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/namespaces/proto/classes/Message" hreflang="en"><link data-rh="true" rel="alternate" href="https://baileys.wiki/docs/api/namespaces/proto/classes/Message" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.299ca415.css">
-<script src="/assets/js/runtime~main.ff9136c0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.34ecbc7f.js" defer="defer"></script>
 <script src="/assets/js/main.f61fe16a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/WhiskeySockets-colorful.png"><link rel="preload" as="image" href="/img/Written-By-Human-Not-By-AI-Badge-white.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_ORjg" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/WhiskeySockets-colorful.png" alt="WhiskeySo ckets Logo" class="themedComponent_Uh4S themedComponent--light_qZSH" style="transform:scale(1.25);padding:0 0.5rem"><img src="/img/WhiskeySockets-colorful.png" alt="WhiskeySo ckets Logo" class="themedComponent_Uh4S themedComponent--dark_IEVO" style="transform:scale(1.25);padding:0 0.5rem"></div><b class="navbar__title text--truncate">Baileys</b></a><a class="navbar__item navbar__link" href="/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/api/classes/BinaryInfo">API Reference</a></div><div class="navbar__items navbar__items--right"><a href="https://purpshell.dev/sponsor" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-sponsor-link" aria-label="Sponsor" title="Sponsor">Sponsor</a><a href="https://whiskey.so/discord" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-discord-link" aria-label="Discord" title="Discord">Discord</a><a href="https://github.com/WhiskeySockets/Baileys" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub" title="GitHub">GitHub</a><div class="toggle_qLfC colorModeToggle_JkL5"><button class="clean-btn toggleButton_cyxl toggleButtonDisabled_ZpFi" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_uMAh"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_INIx"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_EbB4"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_HkkU"><div class="docsWrapper_aCMH"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_ujBn" type="button"></button><div class="docRoot_UDJt"><aside class="theme-doc-sidebar-container docSidebarContainer_TlFv"><div class="sidebarViewport_xkSj"><div class="sidebar__SIo"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_I2aY"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/classes/BinaryInfo">classes</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/enumerations/DisconnectReason">enumerations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/functions/addTransactionCapability">functions</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/api/">baileys</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/interfaces/BaileysEventEmitter">interfaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/api/namespaces/proto/">namespaces</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/docs/api/namespaces/proto/">proto</a><button aria-label="Collapse sidebar category &#x27;proto&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/docs/api/namespaces/proto/classes/ADVDeviceIdentity">classes</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ADVDeviceIdentity">Class: ADVDeviceIdentity</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ADVKeyIndexList">Class: ADVKeyIndexList</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ADVSignedDeviceIdentity">Class: ADVSignedDeviceIdentity</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ADVSignedDeviceIdentityHMAC">Class: ADVSignedDeviceIdentityHMAC</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ADVSignedKeyIndexList">Class: ADVSignedKeyIndexList</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/AIQueryFanout">Class: AIQueryFanout</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/AIRichResponseMessage">Class: AIRichResponseMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Account">Class: Account</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ActionLink">Class: ActionLink</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/AutoDownloadSettings">Class: AutoDownloadSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/AvatarUserSettings">Class: AvatarUserSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BizAccountLinkInfo">Class: BizAccountLinkInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BizAccountPayload">Class: BizAccountPayload</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BizIdentityInfo">Class: BizIdentityInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotAgeCollectionMetadata">Class: BotAgeCollectionMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotAvatarMetadata">Class: BotAvatarMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotCapabilityMetadata">Class: BotCapabilityMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotImagineMetadata">Class: BotImagineMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotLinkedAccount">Class: BotLinkedAccount</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotLinkedAccountsMetadata">Class: BotLinkedAccountsMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotMediaMetadata">Class: BotMediaMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotMemoryFact">Class: BotMemoryFact</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotMemoryMetadata">Class: BotMemoryMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotMemuMetadata">Class: BotMemuMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotMetadata">Class: BotMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotMetricsMetadata">Class: BotMetricsMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotModeSelectionMetadata">Class: BotModeSelectionMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotModelMetadata">Class: BotModelMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotPluginMetadata">Class: BotPluginMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotProgressIndicatorMetadata">Class: BotProgressIndicatorMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotPromotionMessageMetadata">Class: BotPromotionMessageMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotPromptSuggestion">Class: BotPromptSuggestion</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotPromptSuggestions">Class: BotPromptSuggestions</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotQuotaMetadata">Class: BotQuotaMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotReminderMetadata">Class: BotReminderMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotRenderingMetadata">Class: BotRenderingMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotSessionMetadata">Class: BotSessionMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotSourcesMetadata">Class: BotSourcesMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/BotSuggestedPromptMetadata">Class: BotSuggestedPromptMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/CallLogRecord">Class: CallLogRecord</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/CertChain">Class: CertChain</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ChatLockSettings">Class: ChatLockSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ChatRowOpaqueData">Class: ChatRowOpaqueData</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Citation">Class: Citation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ClientPairingProps">Class: ClientPairingProps</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ClientPayload">Class: ClientPayload</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/CommentMetadata">Class: CommentMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/CompanionCommitment">Class: CompanionCommitment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/CompanionEphemeralIdentity">Class: CompanionEphemeralIdentity</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Config">Class: Config</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ContextInfo">Class: ContextInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Conversation">Class: Conversation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/DeviceCapabilities">Class: DeviceCapabilities</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/DeviceConsistencyCodeMessage">Class: DeviceConsistencyCodeMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/DeviceListMetadata">Class: DeviceListMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/DeviceProps">Class: DeviceProps</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/DisappearingMode">Class: DisappearingMode</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EmbeddedContent">Class: EmbeddedContent</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EmbeddedMessage">Class: EmbeddedMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EmbeddedMusic">Class: EmbeddedMusic</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EncryptedPairingRequest">Class: EncryptedPairingRequest</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EphemeralSetting">Class: EphemeralSetting</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EventAdditionalMetadata">Class: EventAdditionalMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/EventResponse">Class: EventResponse</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ExitCode">Class: ExitCode</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ExternalBlobReference">Class: ExternalBlobReference</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Field">Class: Field</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/GlobalSettings">Class: GlobalSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/GroupMention">Class: GroupMention</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/GroupParticipant">Class: GroupParticipant</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/HandshakeMessage">Class: HandshakeMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/HistorySync">Class: HistorySync</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/HistorySyncMsg">Class: HistorySyncMsg</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/HydratedTemplateButton">Class: HydratedTemplateButton</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/IdentityKeyPairStructure">Class: IdentityKeyPairStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/InteractiveAnnotation">Class: InteractiveAnnotation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/KeepInChat">Class: KeepInChat</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/KeyExchangeMessage">Class: KeyExchangeMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/KeyId">Class: KeyId</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/LIDMigrationMapping">Class: LIDMigrationMapping</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/LIDMigrationMappingSyncMessage">Class: LIDMigrationMappingSyncMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/LIDMigrationMappingSyncPayload">Class: LIDMigrationMappingSyncPayload</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/LegacyMessage">Class: LegacyMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/LimitSharing">Class: LimitSharing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/LocalizedName">Class: LocalizedName</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Location">Class: Location</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MediaData">Class: MediaData</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MediaNotifyMessage">Class: MediaNotifyMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MediaRetryNotification">Class: MediaRetryNotification</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MemberLabel">Class: MemberLabel</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/api/namespaces/proto/classes/Message">Class: Message</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MessageAddOn">Class: MessageAddOn</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MessageAddOnContextInfo">Class: MessageAddOnContextInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MessageAssociation">Class: MessageAssociation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MessageContextInfo">Class: MessageContextInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MessageKey">Class: MessageKey</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MessageSecretMessage">Class: MessageSecretMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Money">Class: Money</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MsgOpaqueData">Class: MsgOpaqueData</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/MsgRowOpaqueData">Class: MsgRowOpaqueData</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/NoiseCertificate">Class: NoiseCertificate</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/NotificationMessageInfo">Class: NotificationMessageInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/NotificationSettings">Class: NotificationSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PairingRequest">Class: PairingRequest</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PastParticipant">Class: PastParticipant</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PastParticipants">Class: PastParticipants</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PatchDebugData">Class: PatchDebugData</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PaymentBackground">Class: PaymentBackground</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PaymentInfo">Class: PaymentInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PhoneNumberToLIDMapping">Class: PhoneNumberToLIDMapping</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PhotoChange">Class: PhotoChange</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PinInChat">Class: PinInChat</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Point">Class: Point</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PollAdditionalMetadata">Class: PollAdditionalMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PollEncValue">Class: PollEncValue</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PollUpdate">Class: PollUpdate</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PreKeyRecordStructure">Class: PreKeyRecordStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PreKeySignalMessage">Class: PreKeySignalMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PremiumMessageInfo">Class: PremiumMessageInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/PrimaryEphemeralIdentity">Class: PrimaryEphemeralIdentity</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ProcessedVideo">Class: ProcessedVideo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ProloguePayload">Class: ProloguePayload</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Pushname">Class: Pushname</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Reaction">Class: Reaction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/RecentEmojiWeight">Class: RecentEmojiWeight</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/RecordStructure">Class: RecordStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/Reportable">Class: Reportable</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ReportingTokenInfo">Class: ReportingTokenInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SenderKeyDistributionMessage">Class: SenderKeyDistributionMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SenderKeyMessage">Class: SenderKeyMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SenderKeyRecordStructure">Class: SenderKeyRecordStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SenderKeyStateStructure">Class: SenderKeyStateStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/ServerErrorReceipt">Class: ServerErrorReceipt</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SessionStructure">Class: SessionStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SignalMessage">Class: SignalMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SignedPreKeyRecordStructure">Class: SignedPreKeyRecordStructure</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/StatusMentionMessage">Class: StatusMentionMessage</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/StatusPSA">Class: StatusPSA</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/StickerMetadata">Class: StickerMetadata</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncActionData">Class: SyncActionData</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncActionValue">Class: SyncActionValue</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdIndex">Class: SyncdIndex</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdMutation">Class: SyncdMutation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdMutations">Class: SyncdMutations</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdPatch">Class: SyncdPatch</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdRecord">Class: SyncdRecord</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdSnapshot">Class: SyncdSnapshot</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdValue">Class: SyncdValue</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/SyncdVersion">Class: SyncdVersion</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/TapLinkAction">Class: TapLinkAction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/TemplateButton">Class: TemplateButton</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/UrlTrackingMap">Class: UrlTrackingMap</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/UserPassword">Class: UserPassword</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/UserReceipt">Class: UserReceipt</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/VerifiedNameCertificate">Class: VerifiedNameCertificate</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/WallpaperSettings">Class: WallpaperSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/WebFeatures">Class: WebFeatures</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/WebMessageInfo">Class: WebMessageInfo</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/api/namespaces/proto/classes/WebNotificationsInfo">Class: WebNotificationsInfo</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/api/namespaces/proto/enumerations/ADVEncryptionType">enumerations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/api/namespaces/proto/interfaces/IADVDeviceIdentity">interfaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/docs/api/namespaces/proto/namespaces/AIRichResponseMessage/">namespaces</a></div></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/type-aliases/AccountSettings">type-aliases</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/api/variables/ALL_WA_PATCH_NAMES">variables</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_oSKW"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_dEmQ"><div class="docItemContainer_EjDF"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer__IBp" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_T2v2"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">namespaces</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/api/namespaces/proto/"><span itemprop="name">proto</span></a><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">classes</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Class: Message</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_n0Wu theme-doc-toc-mobile tocMobile_eRVg"><button type="button" class="clean-btn tocCollapsibleButton_CTWW">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Class: Message</h1></header>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3871" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3871</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3871" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3871</a></p>
 <h2 class="anchor anchorWithStickyNavbar_OLw8" id="implements">Implements<a href="#implements" class="hash-link" aria-label="Direct link to Implements" title="Direct link to Implements">​</a></h2>
 <ul>
 <li><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a></li>
@@ -19,7 +19,7 @@
 <blockquote>
 <p><strong>new Message</strong>(<code>p</code>?): <a href="/docs/api/namespaces/proto/classes/Message"><code>Message</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3872" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3872</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3872" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3872</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="p">p?<a href="#p" class="hash-link" aria-label="Direct link to p?" title="Direct link to p?">​</a></h5>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a></p>
@@ -30,7 +30,7 @@
 <blockquote>
 <p><code>optional</code> <strong>albumMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IAlbumMessage"><code>IAlbumMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3941" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3941</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3941" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3941</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of">Implementation of<a href="#implementation-of" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#albummessage"><code>albumMessage</code></a></p>
 <hr>
@@ -38,7 +38,7 @@
 <blockquote>
 <p><code>optional</code> <strong>associatedChildMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3947" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3947</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3947" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3947</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-1">Implementation of<a href="#implementation-of-1" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#associatedchildmessage"><code>associatedChildMessage</code></a></p>
 <hr>
@@ -46,7 +46,7 @@
 <blockquote>
 <p><code>optional</code> <strong>audioMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IAudioMessage"><code>IAudioMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3880" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3880</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3880" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3880</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-2">Implementation of<a href="#implementation-of-2" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#audiomessage"><code>audioMessage</code></a></p>
 <hr>
@@ -54,7 +54,7 @@
 <blockquote>
 <p><code>optional</code> <strong>bcallMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IBCallMessage"><code>IBCallMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3933" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3933</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3933" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3933</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-3">Implementation of<a href="#implementation-of-3" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#bcallmessage"><code>bcallMessage</code></a></p>
 <hr>
@@ -62,7 +62,7 @@
 <blockquote>
 <p><code>optional</code> <strong>botInvokeMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3929" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3929</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3929" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3929</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-4">Implementation of<a href="#implementation-of-4" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#botinvokemessage"><code>botInvokeMessage</code></a></p>
 <hr>
@@ -70,7 +70,7 @@
 <blockquote>
 <p><code>optional</code> <strong>botTaskMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3956" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3956</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3956" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3956</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-5">Implementation of<a href="#implementation-of-5" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#bottaskmessage"><code>botTaskMessage</code></a></p>
 <hr>
@@ -78,7 +78,7 @@
 <blockquote>
 <p><code>optional</code> <strong>buttonsMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IButtonsMessage"><code>IButtonsMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3906" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3906</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3906" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3906</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-6">Implementation of<a href="#implementation-of-6" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#buttonsmessage"><code>buttonsMessage</code></a></p>
 <hr>
@@ -86,7 +86,7 @@
 <blockquote>
 <p><code>optional</code> <strong>buttonsResponseMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IButtonsResponseMessage"><code>IButtonsResponseMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3907" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3907</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3907" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3907</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-7">Implementation of<a href="#implementation-of-7" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#buttonsresponsemessage"><code>buttonsResponseMessage</code></a></p>
 <hr>
@@ -94,7 +94,7 @@
 <blockquote>
 <p><code>optional</code> <strong>call</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ICall"><code>ICall</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3882" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3882</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3882" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3882</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-8">Implementation of<a href="#implementation-of-8" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#call"><code>call</code></a></p>
 <hr>
@@ -102,7 +102,7 @@
 <blockquote>
 <p><code>optional</code> <strong>callLogMesssage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ICallLogMessage"><code>ICallLogMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3930" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3930</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3930" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3930</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-9">Implementation of<a href="#implementation-of-9" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#calllogmesssage"><code>callLogMesssage</code></a></p>
 <hr>
@@ -110,7 +110,7 @@
 <blockquote>
 <p><code>optional</code> <strong>cancelPaymentRequestMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ICancelPaymentRequestMessage"><code>ICancelPaymentRequestMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3892" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3892</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3892" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3892</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-10">Implementation of<a href="#implementation-of-10" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#cancelpaymentrequestmessage"><code>cancelPaymentRequestMessage</code></a></p>
 <hr>
@@ -118,7 +118,7 @@
 <blockquote>
 <p><code>optional</code> <strong>chat</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IChat"><code>IChat</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3883" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3883</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3883" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3883</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-11">Implementation of<a href="#implementation-of-11" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#chat"><code>chat</code></a></p>
 <hr>
@@ -126,7 +126,7 @@
 <blockquote>
 <p><code>optional</code> <strong>commentMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ICommentMessage"><code>ICommentMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3937" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3937</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3937" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3937</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-12">Implementation of<a href="#implementation-of-12" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#commentmessage"><code>commentMessage</code></a></p>
 <hr>
@@ -134,7 +134,7 @@
 <blockquote>
 <p><code>optional</code> <strong>contactMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IContactMessage"><code>IContactMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3876" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3876</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3876" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3876</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-13">Implementation of<a href="#implementation-of-13" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#contactmessage"><code>contactMessage</code></a></p>
 <hr>
@@ -142,7 +142,7 @@
 <blockquote>
 <p><code>optional</code> <strong>contactsArrayMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IContactsArrayMessage"><code>IContactsArrayMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3885" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3885</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3885" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3885</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-14">Implementation of<a href="#implementation-of-14" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#contactsarraymessage"><code>contactsArrayMessage</code></a></p>
 <hr>
@@ -150,7 +150,7 @@
 <blockquote>
 <p><strong>conversation</strong>: <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3873" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3873</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3873" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3873</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-15">Implementation of<a href="#implementation-of-15" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#conversation"><code>conversation</code></a></p>
 <hr>
@@ -158,7 +158,7 @@
 <blockquote>
 <p><code>optional</code> <strong>declinePaymentRequestMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IDeclinePaymentRequestMessage"><code>IDeclinePaymentRequestMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3891" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3891</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3891" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3891</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-16">Implementation of<a href="#implementation-of-16" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#declinepaymentrequestmessage"><code>declinePaymentRequestMessage</code></a></p>
 <hr>
@@ -166,7 +166,7 @@
 <blockquote>
 <p><code>optional</code> <strong>deviceSentMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IDeviceSentMessage"><code>IDeviceSentMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3898" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3898</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3898" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3898</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-17">Implementation of<a href="#implementation-of-17" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#devicesentmessage"><code>deviceSentMessage</code></a></p>
 <hr>
@@ -174,7 +174,7 @@
 <blockquote>
 <p><code>optional</code> <strong>documentMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IDocumentMessage"><code>IDocumentMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3879" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3879</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3879" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3879</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-18">Implementation of<a href="#implementation-of-18" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#documentmessage"><code>documentMessage</code></a></p>
 <hr>
@@ -182,7 +182,7 @@
 <blockquote>
 <p><code>optional</code> <strong>documentWithCaptionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3916" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3916</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3916" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3916</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-19">Implementation of<a href="#implementation-of-19" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#documentwithcaptionmessage"><code>documentWithCaptionMessage</code></a></p>
 <hr>
@@ -190,7 +190,7 @@
 <blockquote>
 <p><code>optional</code> <strong>editedMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3920" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3920</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3920" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3920</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-20">Implementation of<a href="#implementation-of-20" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#editedmessage"><code>editedMessage</code></a></p>
 <hr>
@@ -198,7 +198,7 @@
 <blockquote>
 <p><code>optional</code> <strong>encCommentMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IEncCommentMessage"><code>IEncCommentMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3932" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3932</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3932" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3932</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-21">Implementation of<a href="#implementation-of-21" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#enccommentmessage"><code>encCommentMessage</code></a></p>
 <hr>
@@ -206,7 +206,7 @@
 <blockquote>
 <p><code>optional</code> <strong>encEventResponseMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IEncEventResponseMessage"><code>IEncEventResponseMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3936" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3936</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3936" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3936</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-22">Implementation of<a href="#implementation-of-22" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#enceventresponsemessage"><code>encEventResponseMessage</code></a></p>
 <hr>
@@ -214,7 +214,7 @@
 <blockquote>
 <p><code>optional</code> <strong>encReactionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IEncReactionMessage"><code>IEncReactionMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3919" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3919</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3919" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3919</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-23">Implementation of<a href="#implementation-of-23" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#encreactionmessage"><code>encReactionMessage</code></a></p>
 <hr>
@@ -222,7 +222,7 @@
 <blockquote>
 <p><code>optional</code> <strong>ephemeralMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3904" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3904</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3904" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3904</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-24">Implementation of<a href="#implementation-of-24" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#ephemeralmessage"><code>ephemeralMessage</code></a></p>
 <hr>
@@ -230,7 +230,7 @@
 <blockquote>
 <p><code>optional</code> <strong>eventCoverImage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3942" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3942</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3942" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3942</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-25">Implementation of<a href="#implementation-of-25" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#eventcoverimage"><code>eventCoverImage</code></a></p>
 <hr>
@@ -238,7 +238,7 @@
 <blockquote>
 <p><code>optional</code> <strong>eventMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IEventMessage"><code>IEventMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3935" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3935</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3935" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3935</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-26">Implementation of<a href="#implementation-of-26" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#eventmessage"><code>eventMessage</code></a></p>
 <hr>
@@ -246,7 +246,7 @@
 <blockquote>
 <p><code>optional</code> <strong>extendedTextMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IExtendedTextMessage"><code>IExtendedTextMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3878" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3878</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3878" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3878</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-27">Implementation of<a href="#implementation-of-27" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#extendedtextmessage"><code>extendedTextMessage</code></a></p>
 <hr>
@@ -254,7 +254,7 @@
 <blockquote>
 <p><code>optional</code> <strong>fastRatchetKeySenderKeyDistributionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ISenderKeyDistributionMessage"><code>ISenderKeyDistributionMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3887" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3887</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3887" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3887</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-28">Implementation of<a href="#implementation-of-28" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#fastratchetkeysenderkeydistributionmessage"><code>fastRatchetKeySenderKeyDistributionMessage</code></a></p>
 <hr>
@@ -262,7 +262,7 @@
 <blockquote>
 <p><code>optional</code> <strong>groupInviteMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IGroupInviteMessage"><code>IGroupInviteMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3895" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3895</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3895" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3895</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-29">Implementation of<a href="#implementation-of-29" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#groupinvitemessage"><code>groupInviteMessage</code></a></p>
 <hr>
@@ -270,7 +270,7 @@
 <blockquote>
 <p><code>optional</code> <strong>groupMentionedMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3924" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3924</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3924" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3924</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-30">Implementation of<a href="#implementation-of-30" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#groupmentionedmessage"><code>groupMentionedMessage</code></a></p>
 <hr>
@@ -278,7 +278,7 @@
 <blockquote>
 <p><code>optional</code> <strong>groupStatusMentionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3948" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3948</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3948" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3948</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-31">Implementation of<a href="#implementation-of-31" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#groupstatusmentionmessage"><code>groupStatusMentionMessage</code></a></p>
 <hr>
@@ -286,7 +286,7 @@
 <blockquote>
 <p><code>optional</code> <strong>groupStatusMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3952" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3952</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3952" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3952</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-32">Implementation of<a href="#implementation-of-32" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#groupstatusmessage"><code>groupStatusMessage</code></a></p>
 <hr>
@@ -294,7 +294,7 @@
 <blockquote>
 <p><code>optional</code> <strong>highlyStructuredMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IHighlyStructuredMessage"><code>IHighlyStructuredMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3886" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3886</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3886" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3886</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-33">Implementation of<a href="#implementation-of-33" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#highlystructuredmessage"><code>highlyStructuredMessage</code></a></p>
 <hr>
@@ -302,7 +302,7 @@
 <blockquote>
 <p><code>optional</code> <strong>imageMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IImageMessage"><code>IImageMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3875" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3875</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3875" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3875</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-34">Implementation of<a href="#implementation-of-34" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#imagemessage"><code>imageMessage</code></a></p>
 <hr>
@@ -310,7 +310,7 @@
 <blockquote>
 <p><code>optional</code> <strong>interactiveMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IInteractiveMessage"><code>IInteractiveMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3909" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3909</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3909" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3909</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-35">Implementation of<a href="#implementation-of-35" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#interactivemessage"><code>interactiveMessage</code></a></p>
 <hr>
@@ -318,7 +318,7 @@
 <blockquote>
 <p><code>optional</code> <strong>interactiveResponseMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IInteractiveResponseMessage"><code>IInteractiveResponseMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3912" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3912</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3912" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3912</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-36">Implementation of<a href="#implementation-of-36" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#interactiveresponsemessage"><code>interactiveResponseMessage</code></a></p>
 <hr>
@@ -326,7 +326,7 @@
 <blockquote>
 <p><code>optional</code> <strong>invoiceMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IInvoiceMessage"><code>IInvoiceMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3905" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3905</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3905" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3905</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-37">Implementation of<a href="#implementation-of-37" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#invoicemessage"><code>invoiceMessage</code></a></p>
 <hr>
@@ -334,7 +334,7 @@
 <blockquote>
 <p><code>optional</code> <strong>keepInChatMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IKeepInChatMessage"><code>IKeepInChatMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3915" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3915</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3915" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3915</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-38">Implementation of<a href="#implementation-of-38" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#keepinchatmessage"><code>keepInChatMessage</code></a></p>
 <hr>
@@ -342,7 +342,7 @@
 <blockquote>
 <p><code>optional</code> <strong>limitSharingMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3955" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3955</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3955" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3955</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-39">Implementation of<a href="#implementation-of-39" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#limitsharingmessage"><code>limitSharingMessage</code></a></p>
 <hr>
@@ -350,7 +350,7 @@
 <blockquote>
 <p><code>optional</code> <strong>listMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IListMessage"><code>IListMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3900" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3900</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3900" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3900</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-40">Implementation of<a href="#implementation-of-40" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#listmessage"><code>listMessage</code></a></p>
 <hr>
@@ -358,7 +358,7 @@
 <blockquote>
 <p><code>optional</code> <strong>listResponseMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IListResponseMessage"><code>IListResponseMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3903" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3903</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3903" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3903</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-41">Implementation of<a href="#implementation-of-41" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#listresponsemessage"><code>listResponseMessage</code></a></p>
 <hr>
@@ -366,7 +366,7 @@
 <blockquote>
 <p><code>optional</code> <strong>liveLocationMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ILiveLocationMessage"><code>ILiveLocationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3889" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3889</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3889" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3889</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-42">Implementation of<a href="#implementation-of-42" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#livelocationmessage"><code>liveLocationMessage</code></a></p>
 <hr>
@@ -374,7 +374,7 @@
 <blockquote>
 <p><code>optional</code> <strong>locationMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ILocationMessage"><code>ILocationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3877" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3877</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3877" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3877</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-43">Implementation of<a href="#implementation-of-43" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#locationmessage"><code>locationMessage</code></a></p>
 <hr>
@@ -382,7 +382,7 @@
 <blockquote>
 <p><code>optional</code> <strong>lottieStickerMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3934" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3934</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3934" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3934</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-44">Implementation of<a href="#implementation-of-44" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#lottiestickermessage"><code>lottieStickerMessage</code></a></p>
 <hr>
@@ -390,7 +390,7 @@
 <blockquote>
 <p><code>optional</code> <strong>messageContextInfo</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/interfaces/IMessageContextInfo"><code>IMessageContextInfo</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3899" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3899</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3899" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3899</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-45">Implementation of<a href="#implementation-of-45" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#messagecontextinfo"><code>messageContextInfo</code></a></p>
 <hr>
@@ -398,7 +398,7 @@
 <blockquote>
 <p><code>optional</code> <strong>messageHistoryBundle</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IMessageHistoryBundle"><code>IMessageHistoryBundle</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3931" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3931</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3931" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3931</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-46">Implementation of<a href="#implementation-of-46" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#messagehistorybundle"><code>messageHistoryBundle</code></a></p>
 <hr>
@@ -406,7 +406,7 @@
 <blockquote>
 <p><code>optional</code> <strong>messageHistoryNotice</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IMessageHistoryNotice"><code>IMessageHistoryNotice</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3958" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3958</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3958" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3958</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-47">Implementation of<a href="#implementation-of-47" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#messagehistorynotice"><code>messageHistoryNotice</code></a></p>
 <hr>
@@ -414,7 +414,7 @@
 <blockquote>
 <p><code>optional</code> <strong>newsletterAdminInviteMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/INewsletterAdminInviteMessage"><code>INewsletterAdminInviteMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3938" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3938</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3938" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3938</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-48">Implementation of<a href="#implementation-of-48" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#newsletteradmininvitemessage"><code>newsletterAdminInviteMessage</code></a></p>
 <hr>
@@ -422,7 +422,7 @@
 <blockquote>
 <p><code>optional</code> <strong>orderMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IOrderMessage"><code>IOrderMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3902" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3902</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3902" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3902</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-49">Implementation of<a href="#implementation-of-49" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#ordermessage"><code>orderMessage</code></a></p>
 <hr>
@@ -430,7 +430,7 @@
 <blockquote>
 <p><code>optional</code> <strong>paymentInviteMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPaymentInviteMessage"><code>IPaymentInviteMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3908" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3908</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3908" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3908</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-50">Implementation of<a href="#implementation-of-50" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#paymentinvitemessage"><code>paymentInviteMessage</code></a></p>
 <hr>
@@ -438,7 +438,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pinInChatMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPinInChatMessage"><code>IPinInChatMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3925" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3925</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3925" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3925</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-51">Implementation of<a href="#implementation-of-51" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pininchatmessage"><code>pinInChatMessage</code></a></p>
 <hr>
@@ -446,7 +446,7 @@
 <blockquote>
 <p><code>optional</code> <strong>placeholderMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPlaceholderMessage"><code>IPlaceholderMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3939" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3939</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3939" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3939</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-52">Implementation of<a href="#implementation-of-52" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#placeholdermessage"><code>placeholderMessage</code></a></p>
 <hr>
@@ -454,7 +454,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollCreationMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPollCreationMessage"><code>IPollCreationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3913" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3913</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3913" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3913</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-53">Implementation of<a href="#implementation-of-53" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollcreationmessage"><code>pollCreationMessage</code></a></p>
 <hr>
@@ -462,7 +462,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollCreationMessageV2</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPollCreationMessage"><code>IPollCreationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3922" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3922</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3922" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3922</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-54">Implementation of<a href="#implementation-of-54" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollcreationmessagev2"><code>pollCreationMessageV2</code></a></p>
 <hr>
@@ -470,7 +470,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollCreationMessageV3</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPollCreationMessage"><code>IPollCreationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3926" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3926</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3926" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3926</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-55">Implementation of<a href="#implementation-of-55" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollcreationmessagev3"><code>pollCreationMessageV3</code></a></p>
 <hr>
@@ -478,7 +478,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollCreationMessageV4</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3949" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3949</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3949" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3949</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-56">Implementation of<a href="#implementation-of-56" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollcreationmessagev4"><code>pollCreationMessageV4</code></a></p>
 <hr>
@@ -486,7 +486,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollCreationMessageV5</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3950" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3950</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3950" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3950</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-57">Implementation of<a href="#implementation-of-57" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollcreationmessagev5"><code>pollCreationMessageV5</code></a></p>
 <hr>
@@ -494,7 +494,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollCreationOptionImageMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3946" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3946</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3946" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3946</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-58">Implementation of<a href="#implementation-of-58" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollcreationoptionimagemessage"><code>pollCreationOptionImageMessage</code></a></p>
 <hr>
@@ -502,7 +502,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollResultSnapshotMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPollResultSnapshotMessage"><code>IPollResultSnapshotMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3945" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3945</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3945" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3945</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-59">Implementation of<a href="#implementation-of-59" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollresultsnapshotmessage"><code>pollResultSnapshotMessage</code></a></p>
 <hr>
@@ -510,7 +510,7 @@
 <blockquote>
 <p><code>optional</code> <strong>pollUpdateMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IPollUpdateMessage"><code>IPollUpdateMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3914" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3914</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3914" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3914</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-60">Implementation of<a href="#implementation-of-60" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#pollupdatemessage"><code>pollUpdateMessage</code></a></p>
 <hr>
@@ -518,7 +518,7 @@
 <blockquote>
 <p><code>optional</code> <strong>productMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IProductMessage"><code>IProductMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3897" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3897</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3897" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3897</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-61">Implementation of<a href="#implementation-of-61" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#productmessage"><code>productMessage</code></a></p>
 <hr>
@@ -526,7 +526,7 @@
 <blockquote>
 <p><code>optional</code> <strong>protocolMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IProtocolMessage"><code>IProtocolMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3884" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3884</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3884" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3884</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-62">Implementation of<a href="#implementation-of-62" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#protocolmessage"><code>protocolMessage</code></a></p>
 <hr>
@@ -534,7 +534,7 @@
 <blockquote>
 <p><code>optional</code> <strong>ptvMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IVideoMessage"><code>IVideoMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3928" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3928</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3928" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3928</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-63">Implementation of<a href="#implementation-of-63" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#ptvmessage"><code>ptvMessage</code></a></p>
 <hr>
@@ -542,7 +542,7 @@
 <blockquote>
 <p><code>optional</code> <strong>questionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3957" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3957</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3957" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3957</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-64">Implementation of<a href="#implementation-of-64" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#questionmessage"><code>questionMessage</code></a></p>
 <hr>
@@ -550,7 +550,7 @@
 <blockquote>
 <p><code>optional</code> <strong>reactionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IReactionMessage"><code>IReactionMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3910" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3910</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3910" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3910</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-65">Implementation of<a href="#implementation-of-65" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#reactionmessage"><code>reactionMessage</code></a></p>
 <hr>
@@ -558,7 +558,7 @@
 <blockquote>
 <p><code>optional</code> <strong>requestPaymentMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IRequestPaymentMessage"><code>IRequestPaymentMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3890" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3890</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3890" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3890</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-66">Implementation of<a href="#implementation-of-66" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#requestpaymentmessage"><code>requestPaymentMessage</code></a></p>
 <hr>
@@ -566,7 +566,7 @@
 <blockquote>
 <p><code>optional</code> <strong>requestPhoneNumberMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IRequestPhoneNumberMessage"><code>IRequestPhoneNumberMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3917" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3917</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3917" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3917</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-67">Implementation of<a href="#implementation-of-67" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#requestphonenumbermessage"><code>requestPhoneNumberMessage</code></a></p>
 <hr>
@@ -574,7 +574,7 @@
 <blockquote>
 <p><code>optional</code> <strong>richResponseMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/interfaces/IAIRichResponseMessage"><code>IAIRichResponseMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3953" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3953</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3953" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3953</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-68">Implementation of<a href="#implementation-of-68" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#richresponsemessage"><code>richResponseMessage</code></a></p>
 <hr>
@@ -582,7 +582,7 @@
 <blockquote>
 <p><code>optional</code> <strong>scheduledCallCreationMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IScheduledCallCreationMessage"><code>IScheduledCallCreationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3923" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3923</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3923" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3923</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-69">Implementation of<a href="#implementation-of-69" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#scheduledcallcreationmessage"><code>scheduledCallCreationMessage</code></a></p>
 <hr>
@@ -590,7 +590,7 @@
 <blockquote>
 <p><code>optional</code> <strong>scheduledCallEditMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IScheduledCallEditMessage"><code>IScheduledCallEditMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3927" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3927</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3927" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3927</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-70">Implementation of<a href="#implementation-of-70" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#scheduledcalleditmessage"><code>scheduledCallEditMessage</code></a></p>
 <hr>
@@ -598,7 +598,7 @@
 <blockquote>
 <p><code>optional</code> <strong>secretEncryptedMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ISecretEncryptedMessage"><code>ISecretEncryptedMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3940" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3940</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3940" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3940</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-71">Implementation of<a href="#implementation-of-71" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#secretencryptedmessage"><code>secretEncryptedMessage</code></a></p>
 <hr>
@@ -606,7 +606,7 @@
 <blockquote>
 <p><code>optional</code> <strong>senderKeyDistributionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ISenderKeyDistributionMessage"><code>ISenderKeyDistributionMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3874" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3874</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3874" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3874</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-72">Implementation of<a href="#implementation-of-72" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#senderkeydistributionmessage"><code>senderKeyDistributionMessage</code></a></p>
 <hr>
@@ -614,7 +614,7 @@
 <blockquote>
 <p><code>optional</code> <strong>sendPaymentMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ISendPaymentMessage"><code>ISendPaymentMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3888" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3888</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3888" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3888</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-73">Implementation of<a href="#implementation-of-73" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#sendpaymentmessage"><code>sendPaymentMessage</code></a></p>
 <hr>
@@ -622,7 +622,7 @@
 <blockquote>
 <p><code>optional</code> <strong>statusAddYours</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3951" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3951</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3951" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3951</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-74">Implementation of<a href="#implementation-of-74" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#statusaddyours"><code>statusAddYours</code></a></p>
 <hr>
@@ -630,7 +630,7 @@
 <blockquote>
 <p><code>optional</code> <strong>statusMentionMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3944" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3944</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3944" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3944</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-75">Implementation of<a href="#implementation-of-75" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#statusmentionmessage"><code>statusMentionMessage</code></a></p>
 <hr>
@@ -638,7 +638,7 @@
 <blockquote>
 <p><code>optional</code> <strong>statusNotificationMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IStatusNotificationMessage"><code>IStatusNotificationMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3954" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3954</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3954" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3954</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-76">Implementation of<a href="#implementation-of-76" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#statusnotificationmessage"><code>statusNotificationMessage</code></a></p>
 <hr>
@@ -646,7 +646,7 @@
 <blockquote>
 <p><code>optional</code> <strong>stickerMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IStickerMessage"><code>IStickerMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3894" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3894</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3894" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3894</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-77">Implementation of<a href="#implementation-of-77" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#stickermessage"><code>stickerMessage</code></a></p>
 <hr>
@@ -654,7 +654,7 @@
 <blockquote>
 <p><code>optional</code> <strong>stickerPackMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IStickerPackMessage"><code>IStickerPackMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3943" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3943</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3943" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3943</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-78">Implementation of<a href="#implementation-of-78" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#stickerpackmessage"><code>stickerPackMessage</code></a></p>
 <hr>
@@ -662,7 +662,7 @@
 <blockquote>
 <p><code>optional</code> <strong>stickerSyncRmrMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IStickerSyncRMRMessage"><code>IStickerSyncRMRMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3911" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3911</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3911" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3911</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-79">Implementation of<a href="#implementation-of-79" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#stickersyncrmrmessage"><code>stickerSyncRmrMessage</code></a></p>
 <hr>
@@ -670,7 +670,7 @@
 <blockquote>
 <p><code>optional</code> <strong>templateButtonReplyMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ITemplateButtonReplyMessage"><code>ITemplateButtonReplyMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3896" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3896</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3896" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3896</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-80">Implementation of<a href="#implementation-of-80" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#templatebuttonreplymessage"><code>templateButtonReplyMessage</code></a></p>
 <hr>
@@ -678,7 +678,7 @@
 <blockquote>
 <p><code>optional</code> <strong>templateMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/ITemplateMessage"><code>ITemplateMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3893" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3893</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3893" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3893</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-81">Implementation of<a href="#implementation-of-81" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#templatemessage"><code>templateMessage</code></a></p>
 <hr>
@@ -686,7 +686,7 @@
 <blockquote>
 <p><code>optional</code> <strong>videoMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IVideoMessage"><code>IVideoMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3881" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3881</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3881" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3881</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-82">Implementation of<a href="#implementation-of-82" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#videomessage"><code>videoMessage</code></a></p>
 <hr>
@@ -694,7 +694,7 @@
 <blockquote>
 <p><code>optional</code> <strong>viewOnceMessage</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3901" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3901</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3901" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3901</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-83">Implementation of<a href="#implementation-of-83" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#viewoncemessage"><code>viewOnceMessage</code></a></p>
 <hr>
@@ -702,7 +702,7 @@
 <blockquote>
 <p><code>optional</code> <strong>viewOnceMessageV2</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3918" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3918</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3918" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3918</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-84">Implementation of<a href="#implementation-of-84" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#viewoncemessagev2"><code>viewOnceMessageV2</code></a></p>
 <hr>
@@ -710,7 +710,7 @@
 <blockquote>
 <p><code>optional</code> <strong>viewOnceMessageV2Extension</strong>: <code>null</code> | <a href="/docs/api/namespaces/proto/namespaces/Message/interfaces/IFutureProofMessage"><code>IFutureProofMessage</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3921" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3921</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3921" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3921</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="implementation-of-85">Implementation of<a href="#implementation-of-85" class="hash-link" aria-label="Direct link to Implementation of" title="Direct link to Implementation of">​</a></h4>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a>.<a href="/docs/api/namespaces/proto/interfaces/IMessage#viewoncemessagev2extension"><code>viewOnceMessageV2Extension</code></a></p>
 <h2 class="anchor anchorWithStickyNavbar_OLw8" id="methods">Methods<a href="#methods" class="hash-link" aria-label="Direct link to Methods" title="Direct link to Methods">​</a></h2>
@@ -718,7 +718,7 @@
 <blockquote>
 <p><code>static</code> <strong>create</strong>(<code>properties</code>?): <a href="/docs/api/namespaces/proto/classes/Message"><code>Message</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3959" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3959</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3959" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3959</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="properties-1">properties?<a href="#properties-1" class="hash-link" aria-label="Direct link to properties?" title="Direct link to properties?">​</a></h5>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a></p>
@@ -729,7 +729,7 @@
 <blockquote>
 <p><code>static</code> <strong>decode</strong>(<code>r</code>, <code>l</code>?): <a href="/docs/api/namespaces/proto/classes/Message"><code>Message</code></a></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3961" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3961</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3961" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3961</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters-2">Parameters<a href="#parameters-2" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="r">r<a href="#r" class="hash-link" aria-label="Direct link to r" title="Direct link to r">​</a></h5>
 <p><code>Uint8Array</code>&lt;<code>ArrayBufferLike</code>&gt; | <code>Reader</code></p>
@@ -742,7 +742,7 @@
 <blockquote>
 <p><code>static</code> <strong>encode</strong>(<code>m</code>, <code>w</code>?): <code>Writer</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3960" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3960</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3960" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3960</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="m">m<a href="#m" class="hash-link" aria-label="Direct link to m" title="Direct link to m">​</a></h5>
 <p><a href="/docs/api/namespaces/proto/interfaces/IMessage"><code>IMessage</code></a></p>
@@ -755,7 +755,7 @@
 <blockquote>
 <p><code>static</code> <strong>getTypeUrl</strong>(<code>typeUrlPrefix</code>?): <code>string</code></p>
 </blockquote>
-<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/f6e1bb61506bec2753a5b8f6180aa91c21980616/WAProto/index.d.ts#L3962" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3962</a></p>
+<p>Defined in: <a href="https://github.com/WhiskeySockets/Baileys/blob/202c39f3fee0cff99bbf3815704d4f89cbc2f24d/WAProto/index.d.ts#L3962" target="_blank" rel="noopener noreferrer">WAProto/index.d.ts:3962</a></p>
 <h4 class="anchor anchorWithStickyNavbar_OLw8" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_OLw8" id="typeurlprefix">typeUrlPrefix?<a href="#typeurlprefix" class="hash-link" aria-label="Direct link to typeUrlPrefix?" title="Direct link to typeUrlPrefix?">​</a></h5>
 <p><code>string</code></p>
