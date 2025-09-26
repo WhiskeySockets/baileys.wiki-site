@@ -87,7 +87,10 @@ With this change, the project has also moved to the new version of Yarn (Yarn v4
 
 ## Protobufs
 
-To drastically reduce the bundle size of Baileys, we have removed some methods in the `proto` package. The only ones that remain are: `.create()` (to be used in the place of `.fromObject()`), and `.encode()` / `.decode()`
+To drastically reduce the bundle size of Baileys, we have removed some methods in the `proto` package. The only ones that remain are: `.create()` (to be used in the place of `.fromObject()`), and `.encode()` / `.decode()`.
+
+When it comes to encoding these types or encoding objects made from protos, please use the BufferJSON utilities. Otherwise, Baileys might break.
+We have added a new `decodeAndHydrate()` method to deal with the problems of decoding with pbjs. Make sure to use it always.
 
 
 For the full patch notes of 7.0.0, check the latest GitHub release: https://github.com/WhiskeySockets/Baileys/releases/
