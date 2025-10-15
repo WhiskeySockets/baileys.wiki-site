@@ -7,7 +7,7 @@ Share the link: https://whiskey.so/migrate-latest
 ## LIDs
 
 :::warning
-This system requires the auth state to support the `lid-mapping` and `device-index` keys.
+This system requires the auth state to support the `lid-mapping` and `device-list` keys.
 Make sure you have updated your authentication state.
 :::
 
