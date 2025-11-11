@@ -35,5 +35,17 @@ Not using SSH:
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
+const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys")
+const { Boom } = require("@hapi/boom")
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+async function connectBot() {
+  const { state, saveCreds } = await useMultiFileAuthState("./auth")
+  const sock = makeWASocket({
+    printQRInTerminal: true,
+    auth: state
+  })
+
+  sock.ev.on("creds.update", saveCreds)
+}
+
+connectBot()whatsApp web 
