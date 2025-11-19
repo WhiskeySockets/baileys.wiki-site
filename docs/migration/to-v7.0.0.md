@@ -7,7 +7,8 @@ Share the link: https://whiskey.so/migrate-latest
 ## LIDs
 
 :::warning
-This system requires the auth state to support the `lid-mapping` and `device-list` keys.
+This system requires the auth state to support the `lid-mapping`, `device-list`, and `tctoken` keys.
+Look at the SignalDataTypeMap to see what needs change in your application.
 Make sure you have updated your authentication state.
 :::
 
