@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # Handling Messages
-Messages, from a history sync or from a messages.upsert event, come in the form of [`WAMessage`](../api/interfaces/WAMessage). This is the protobuf that WhatsApp Web stores its messages in.
+Messages, from a history sync or from a messages.upsert event, come in the form of [`proto.IWebMessageInfo`](../api/namespaces/proto/interfaces/IWebMessageInfo). This is the protobuf that WhatsApp Web stores its messages in.
 
 The message data specifically is in the format [`proto.IMessage`](../api/namespaces/proto/interfaces/IMessage).
 You can send messages in this format using the [`sock.relayMessage`](../api/functions/makeWASocket#relaymessage) function.
