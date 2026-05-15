@@ -22,7 +22,7 @@ Adding Baileys to your project is as simple as:
 npm install baileys
 ```
 :::info
-As of now, Baileys requires **Node 17+** to function. It is planned to abstract the project away from Node in a future releasae.
+As of now, Baileys requires **Node 20+** to function. It is planned to abstract the project away from Node in a future release.
 :::
 
 Since NPM/Yarn releases are on a semi-monthly basis, you can use the GitHub branch directly
