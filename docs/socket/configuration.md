@@ -4,75 +4,210 @@ sidebar_position: 1
 
 # Configuration
 
-The first step into getting anywhere with Baileys is configuring the socket.
+The first step to using Baileys in production is a safe socket configuration.
 
-Baileys is very open by default and allows you to configure various options.
+All options are passed to `makeWASocket(...)`, and the full config shape is available in [`UserFacingSocketConfig`](../api/type-aliases/UserFacingSocketConfig).
 
-All configuration is passed through the makeWASocket function. The config presents itself as the type [UserFacingSocketConfig](../api/type-aliases/UserFacingSocketConfig).
+This page focuses on what matters most in real deployments, with practical patterns and examples.
 
-You can take a look at the type, I won't bore you here. The only required properties here strictly speaking are `auth`, `logger`, and `getMessage`.
+## Minimum required options
 
-### logger
-Baileys uses the `pino` library to log by default, but after a recent change ([#1153](https://github.com/WhiskeySockets/Baileys/pull/1153)), as long as you define a similar type, you'll be OK.
-As for pino, you can stream the logs into [a file](https://getpino.io/#/docs/api?id=pinodestinationopts-gt-sonicboom) or even consume them as a realtime [data stream](https://getpino.io/#/docs/transports).
+In practice, you should always provide:
 
-### auth
-You should always implement your own auth state.
-Whether you decide a SQL, no-SQL or Redis auth state fits you best, that depends on your needs.
+- `auth`
+- `logger`
+- `getMessage`
 
-As of now, there are no actively maintained 3rd-party auth states, but if there are any I'll add them here.
-
-<!--TODO: Look into usage and eventually remove this function or replace it-->
-### getMessage
-- It is important to note the [`getMessage`](../api/type-aliases/SocketConfig#getmessage) function. This functionality is needed for resending missing messages or decrypting poll votes.
-- This should be implemented by making a call to your database or wherever the message is stored, using the message key as an index.
-
-With that in mind, your configuration should look like this:
 ```ts
 import makeWASocket from 'baileys'
 import P from 'pino'
+
 const sock = makeWASocket({
-  auth: any, // auth state of your choosing,
-  logger: P() // you can configure this as much as you want, even including streaming the logs to a ReadableStream for upload or saving to a file
+  auth: state,
+  logger: P({ level: 'info' }),
+  getMessage: async (key) => {
+    // load from your DB/cache by message key
+    return undefined
+  },
 })
 ```
 
-### browser
-The only consideration is when logging in using [pairing code](./connecting#pairing-code-login).
-In that case you should only set a valid/logical browser config (e.g. [`Browsers`](../api/variables/Browsers)`.macOS("Google Chrome")`), otherwise the pair will fail.
-Once you are fully paired, you can switch the browser config back to normal.
+## `logger`
 
+Baileys defaults to `pino`-style logging. You can use `pino` directly or adapt your own logger to the same shape.
 
-### version
-It is recommended to leave the version settings to their default options.
-In future releases, the WhatsApp version will be actively locked to the library to insure maximum compatibility, under the ProtoCocktail project.
+Good production practice:
 
-Also, It is **not recommended** to set the latest version on your socket every time you connect (e.g. using [`fetchLatestWaWebVersion`](../api/functions/fetchLatestWaWebVersion)), as you may face incompabitility.
-If you want to set a custom version, make sure your protobufs are up to date and that you are a few versions behind.
+- set log level by environment (`info`, `warn`, `error`)
+- enrich logs with `connectionId` and request metadata
+- ship logs to files or a centralized sink
 
-### syncFullHistory
-Baileys emulates a web browser by default (in the connection headers).
-If you want to emulate a desktop to get full chat history events, use the [`syncFullHistory`](../api/type-aliases/SocketConfig#syncfullhistory) option.
+## `auth`
 
-Also, your browser string should be a desktop:
+You should implement your own auth state and persistence strategy.
+
+Typical strategies:
+
+- local filesystem only (simpler, lower resilience)
+- Redis + disk fallback
+- MySQL + Redis cache + disk fallback
+
+### Why this matters
+
+When `creds.update` is emitted frequently, you need durable persistence with fallback paths.
+If one storage layer fails, your bot should continue running and recover automatically.
+
+## `getMessage`
+
+`getMessage` is required for retrying messages and decrypting some events (like poll updates).
+
+You should resolve messages by key from cache/DB instead of memory only.
+
 ```ts
-browser: Browsers.macOS("Desktop") // can be Windows/Ubuntu instead of macOS
+import type { WAMessageKey } from 'baileys'
+
+const getMessage = async (key: WAMessageKey) => {
+  const remoteJid = key.remoteJid
+  const id = key.id
+  if (!remoteJid || !id) return undefined
+
+  const row = await db.messages.findUnique({
+    where: { remoteJid_id: { remoteJid, id } },
+  })
+
+  return row?.message ?? undefined
+}
 ```
 
-### markOnlineOnConnect
-By default, Baileys sets your presence as online on connect. This will stop sending notifications to your phone.
-To counter this, you can set the [`markOnlineOnConnect`](../api/type-aliases/SocketConfig#markonlineonconnect) option to `false`.
+## `browser`
 
-If you are still facing missing notifications, check the Presence **[reference missing]** page.
+This is especially important for [pairing code login](./connecting#pairing-code-login).
 
-### cachedGroupMetadata
-When sending messages to a group, the [`sendMessage`](../api/functions/makeWASocket#sendmessage) function will try to get the group participant list (to encrypt the message to each participant).
+Use a valid browser profile when pairing:
 
-This is a problem and causes a ratelimit and potential bans from WhatsApp. To counter this, you should provide the socket with a `cachedGroupMetadata` cache.
 ```ts
-const groupCache = new NodeCache({ /* ... */ })
+import { Browsers } from 'baileys'
+
+browser: Browsers.macOS('Google Chrome')
+```
+
+After successful pairing, you can switch to your normal profile.
+
+Example for production identity:
+
+```ts
+browser: Browsers.ubuntu('Production Bot')
+```
+
+## `version`
+
+By default, prefer Baileys defaults.
+
+Avoid forcing `fetchLatestWaWebVersion` on every connection, since this can introduce compatibility issues when protobuf/schema behavior changes.
+
+If you manage version manually:
+
+- cache fetched versions (avoid querying each boot)
+- keep fallback to `DEFAULT_CONNECTION_CONFIG.version`
+- roll forward gradually
+
+## `syncFullHistory` and history policy
+
+Baileys identifies itself as web by default.
+If you need desktop-like history behavior, use desktop browser headers and tune history sync carefully.
+
+```ts
+import { Browsers } from 'baileys'
+
+syncFullHistory: false,
+browser: Browsers.macOS('Desktop')
+```
+
+In production, prefer a policy-based approach for history sync to avoid large event bursts at every reconnect.
+
+## `markOnlineOnConnect`
+
+By default, Baileys marks your account online after connecting, which may reduce phone push notifications.
+
+Set this to `false` if you need to preserve mobile notifications:
+
+```ts
+markOnlineOnConnect: false
+```
+
+## `cachedGroupMetadata`
+
+When sending to groups, Baileys needs participant metadata for encryption.
+Without caching, repeated fetches can increase rate-limit risk.
+
+```ts
+import NodeCache from 'node-cache'
+
+const groupCache = new NodeCache({ stdTTL: 300, useClones: false })
 
 const sock = makeWASocket({
-    cachedGroupMetadata: async (jid) => groupCache.get(jid)
+  cachedGroupMetadata: async (jid) => groupCache.get(jid),
 })
 ```
+
+For larger bots, consider Redis-backed caches.
+
+## Production-ready socket example
+
+```ts
+import makeWASocket, { Browsers, DEFAULT_CONNECTION_CONFIG, fetchLatestBaileysVersion } from 'baileys'
+import pino from 'pino'
+
+const log = pino({ level: process.env.LOG_LEVEL || 'info' })
+
+let cachedVersion: { version: typeof DEFAULT_CONNECTION_CONFIG.version; ts: number } | null = null
+const VERSION_TTL_MS = 24 * 60 * 60 * 1000
+
+async function resolveVersion() {
+  if (cachedVersion && Date.now() - cachedVersion.ts < VERSION_TTL_MS) {
+    return cachedVersion.version
+  }
+
+  try {
+    const latest = await fetchLatestBaileysVersion()
+    if ('version' in latest && latest.version) {
+      cachedVersion = { version: latest.version, ts: Date.now() }
+      return latest.version
+    }
+  } catch (err) {
+    log.warn({ err }, 'failed to fetch Baileys version, using fallback')
+  }
+
+  return cachedVersion?.version ?? DEFAULT_CONNECTION_CONFIG.version
+}
+
+export async function createSocket({ auth, getMessage, cachedGroupMetadata }: {
+  auth: any
+  getMessage: (key: any) => Promise<any>
+  cachedGroupMetadata?: (jid: string) => Promise<any>
+}) {
+  const version = await resolveVersion()
+
+  return makeWASocket({
+    auth,
+    version,
+    logger: log,
+    browser: Browsers.ubuntu('Production Bot'),
+    markOnlineOnConnect: false,
+    syncFullHistory: false,
+    getMessage,
+    cachedGroupMetadata,
+  })
+}
+```
+
+## Final checklist
+
+Before going live, confirm:
+
+- auth persistence is durable (`creds.update` is handled)
+- `getMessage` reads from persistent storage
+- group metadata caching is enabled
+- browser config is valid for pairing mode
+- version handling has safe fallback behavior
+- online presence behavior (`markOnlineOnConnect`) matches your product expectations
