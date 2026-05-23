@@ -27,6 +27,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'socket/configuration',
         'socket/connecting',
+        'socket/connecting-via-proxy',
         'socket/history-sync',
         'socket/receiving-updates',
         'socket/handling-messages',

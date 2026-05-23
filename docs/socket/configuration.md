@@ -76,3 +76,8 @@ const sock = makeWASocket({
     cachedGroupMetadata: async (jid) => groupCache.get(jid)
 })
 ```
+
+### Proxy Configuration
+If you need to connect through a proxy, there are specific steps required to configure both the WebSocket and HTTP agents.
+
+For a detailed guide, please see the [Connecting via a Proxy](./connecting-via-proxy.md) page.
