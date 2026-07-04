@@ -86,7 +86,7 @@ await sock.sendMessage(jid, {
 
 ## contextInfo, linkPreview, other formats
 
-Baileys can generate high quality link previews when the socket is configured with `generateHighQualityLinkPreview`.
+Baileys can generate high-quality link previews when the socket is configured with `generateHighQualityLinkPreview`.
 
 ```ts
 const sock = makeWASocket({
@@ -155,12 +155,12 @@ await sock.sendMessage(jid, {
 
 ## note about disappearing mode (ephemeralExpiration)
 
-You can set `ephemeralExpiration` per message when the chat has disappearing messages enabled.
+You can set `ephemeralExpiration` in seconds per message when the chat has disappearing messages enabled.
 
 ```ts
 await sock.sendMessage(jid, {
   text: 'this message follows disappearing mode'
 }, {
-  ephemeralExpiration: 24 * 60 * 60
+  ephemeralExpiration: 24 * 60 * 60 // 24 hours, in seconds
 })
 ```
